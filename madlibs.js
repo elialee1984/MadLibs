@@ -2,39 +2,6 @@ let adjective, noun, verb, name
 
 const madLibsStory = `Once upon a time, there was a {{adjective}} {{noun}} who loved to {{verb}} all day long. One day, {{name}}, the {{adjective}} friend, joined {{noun}} on a {{adjective}} adventure to find the {{noun}}.`;
 
-
-// import * as readline from 'node:readline/promises';
-// import { stdin as input, stdout as output } from 'node:process';
-
-// const rl = readline.createInterface({ input, output });
-// async function fillMadLibs() {
-//     const wordRegex = /\[[a-zA-Z]+\]/g;
-//     const placeholders = madLibsStory.match(wordRegex);
-  
-//     if (!placeholders) {
-//       console.log('No placeholders found in the story.');
-//       return;
-//     }
-  
-//     const words = {};
-  
-//     for (const placeholder of placeholders) {
-//       const wordType = placeholder.slice(1, -1); // Removing the brackets []
-//       const question = `Enter a ${wordType}: `;
-//       words[wordType] = await rl.question(question);
-//     }
-  
-//     return madLibsStory.replace(wordRegex, match => words[match.slice(1, -1)]);
-//   }
-//   async function main() {
-//     const completedStory = await fillMadLibs();
-//     console.log('\nYour MadLibs Story:\n');
-//     console.log(completedStory);
-//     rl.close();
-//   }
-  
-//   main().catch(err => console.error('Error:', err));
-  
 import * as readline from 'readline';
 import { readFile } from 'fs/promises';
 
