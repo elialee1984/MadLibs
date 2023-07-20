@@ -1,0 +1,16 @@
+{
+  "name": "mad_libs",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "madlibs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}
